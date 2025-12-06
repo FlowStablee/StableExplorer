@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon: #00ff9d;
+  --bg: #050505;
+}
+
+body {
+  background-color: var(--bg);
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  /* Cyber Grid Background */
+  background-image: 
+    linear-gradient(rgba(0, 255, 157, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 157, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #222; }
+::-webkit-scrollbar-thumb:hover { background: var(--neon); }
+
+/* Components */
+.terminal-card {
+  background: #0a0a0a;
+  border: 1px solid #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+/* Neon Glow Text */
+.neon-text {
+  text-shadow: 0 0 5px rgba(0, 255, 157, 0.4);
+}
+
+.input-terminal {
+  background: #000;
+  border: 1px solid #333;
+  color: var(--neon);
+  font-family: monospace;
+}
+.input-terminal:focus {
+  outline: none;
+  border-color: var(--neon);
+  box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
