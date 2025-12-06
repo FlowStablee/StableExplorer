@@ -42,10 +42,10 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-col">
                     <span className="text-lg font-bold tracking-widest text-white font-mono group-hover:text-neon transition">
-                        STABLE
+                        STABLE Mainet Explorer
                     </span>
                     <span className="text-[9px] uppercase tracking-[0.3em] text-gray-500">
-                        EXPLORER
+                        Powered by FlowStable
                     </span>
                 </div>
             </Link>
